@@ -1,0 +1,15 @@
+# Copa FutBotMX - Vision por Computadora
+# Python 3.11. torch con CUDA: instalar aparte con el index-url de PyTorch:
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu124
+torch>=2.6
+torchvision
+ultralytics>=8.4.62
+supervision==0.28.0
+trackers>=2.4.0
+opencv-python>=4.11
+numpy==1.26.4          # NO subir a 2.x (rompe scipy/supervision en este entorno)
+matplotlib>=3.6
+scipy>=1.10
+psutil
+# SAM 3 viene integrado en ultralytics; requiere sam3.pt (acceso HuggingFace facebook/sam3)
+# y los paquetes transformers/timm que ultralytics instala automaticamente.
