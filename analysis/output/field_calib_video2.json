@@ -1,0 +1,8 @@
+{
+  "video": "Video2minutos.mp4",
+  "ref_frame": 900,
+  "img_size": [1080, 1920],
+  "field_corners": [[35, 290], [830, 195], [868, 1545], [40, 1615]],
+  "goal_amarilla": null,
+  "goal_azul": null
+}

@@ -1,0 +1,39 @@
+# ---- Caché de Python ----
+__pycache__/
+*.pyc
+
+# ---- Pesos de modelos (se descargan aparte; NO van a git) ----
+# Ignora todos los .pt (sam3.pt 3.3G, modelos base de YOLO, last.pt, baseline...)
+*.pt
+# ...excepto el detector final que usa el análisis:
+!training/runs/qa_s/weights/
+!training/runs/qa_s/weights/best.pt
+
+# ---- Entrenamientos viejos / de prueba (qa_s es el bueno) ----
+training/runs/baseline/
+training/runs/segment/
+training/runs/test_9938/
+training/runs/test_9938_qa_s/
+
+# ---- Sobras del auto-etiquetado (SAM predict) ----
+dataset_generation/runs/
+
+# ---- Intermedios de generación de dataset ----
+# (dataset pesado en Roboflow; frames/overlays no se entregan)
+dataset_generation/output/*
+# ...pero conservar las calibraciones (pequeñas, reproducen el análisis):
+!dataset_generation/output/field_calib.json
+!dataset_generation/output/field_calib_analisis.json
+
+# ---- Salidas de análisis: solo se entrega la demo final ----
+analysis/output/*
+!analysis/output/partido2min/
+!analysis/output/demo/
+!analysis/output/field_calib_video2.json
+
+# ---- Imágenes de depuración (calibración/grids/warps temporales) ----
+video_test/*.jpg
+
+# ---- Video crudo de entrada (290 MB > limite 100 MB de GitHub) ----
+# Subir a Drive y enlazar en el README; los analisis.mp4 de salida (<100MB) si van.
+video_test/*.mp4

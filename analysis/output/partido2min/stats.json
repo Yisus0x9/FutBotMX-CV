@@ -1,0 +1,29 @@
+{
+  "frames": 3480,
+  "rango": [
+    120,
+    3600
+  ],
+  "sam": false,
+  "posesion_pct": {
+    "verde": 21.0,
+    "oscuro": 79.0
+  },
+  "goles": [
+    {
+      "frame": 2872,
+      "porteria": "amarilla",
+      "t_s": 95.7
+    },
+    {
+      "frame": 2947,
+      "porteria": "amarilla",
+      "t_s": 98.2
+    },
+    {
+      "frame": 3006,
+      "porteria": "amarilla",
+      "t_s": 100.2
+    }
+  ]
+}
