@@ -23,7 +23,7 @@ El modelo no solo dice *dónde* está cada objeto, sino *qué es* (a qué equipo
   (control de calidad / QA).
 - **GPU NVIDIA RTX 4060** — para entrenar en minutos en lugar de horas.
 
-> ¿Por qué afinar YOLO y no SAM 3? SAM 3 segmenta pero **no distingue equipos** y es pesado para
+> Se genero un dataset de aproximadamente 469 img para hacer fine- tunin sobre yolo.
 > video en tiempo real. YOLO sí clasifica, es veloz y barato de afinar. Estrategia: **SAM 3
 > etiqueta → YOLO aprende y corre**.
 

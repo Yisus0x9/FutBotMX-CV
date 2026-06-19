@@ -42,7 +42,7 @@ material es la materia prima para entrenar.
 
 Clases: `robot_verde`, `robot_oscuro`, `balon`.
 
-## Cómo funciona (en una línea)
+## Cómo funciona
 
 ```
 frame → SAM 3 recorta robots → filtra (dentro del campo) → clasifica equipo por color

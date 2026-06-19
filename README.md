@@ -12,10 +12,10 @@ equipo** y **detección de gol**.
 |---|
 | Peñarrieta Villa Jesús |
 | Reyes Cuevas Abraham |
-| Ulloa Jade |
+| Ullola Castro Jade |
 | Vega Miranda Daniel |
 
-🎬 **Reel de Instagram:** _<agregar link>_
+**Reel de Instagram:** _<agregar link>_
 
 ---
 
@@ -40,14 +40,14 @@ combina varias técnicas:
 ## Arquitectura
 
 ```
-                 ┌── dataset_generation ──┐
+                 ┌─────── dataset_generation ───────┐
   Video 9933 ──► │ SAM 3 (texto) → máscaras         │ ──► dataset YOLOv8-seg ──► Roboflow (QA)
   (cenital)      │ + clasificación equipo (HSV)     │
                  └──────────────────────────────────┘
-                 ┌── training ────────────┐
+                 ┌──────────── training ────────────┐
   dataset QA ──► │ YOLOv8-seg fine-tuning           │ ──► best.pt (robot_verde/oscuro/balon)
                  └──────────────────────────────────┘
-                 ┌── analysis ────────────┐
+                 ┌──────────── analysis ────────────┐
   Video 9938 ──► │ YOLOv8-seg → SAM 3 (refina) →    │ ──► video 3 paneles + heatmap +
   (cenital)      │ ByteTrack → homografía           │     posesión + goles
                  └──────────────────────────────────┘
@@ -69,7 +69,7 @@ Salida del análisis (3 paneles): **cámara + máscaras | vista cenital real (wa
 - **Análisis**: posesión por equipo, mapa de calor de zonas controladas, detección de gol
   (balón dentro de la zona de portería en el campo canónico).
 
-## Analítica avanzada (estilo transmisión)
+## Analítica avanzada
 
 El pipeline registra las **posiciones cenitales por-frame** (`tracks.csv`) y `visualize.py`
 las convierte en un **reporte de partido estilo broadcast** sobre el campo canónico a escala
