@@ -6,8 +6,16 @@ segmentar, rastrear y analizar partidos de fútbol robótico (RoboCupJunior Socc
 video cenital, generando un **mapa táctico**, **mapa de calor de control**, **posesión por
 equipo** y **detección de gol**.
 
-> Reel de Instagram: **<AGREGAR LINK>**
-> Equipo: ** <Perros del Routing  / Peñarrieta Villa Jesus \nReyes Cuevas Abraham \n Ullola Jade \nVega Miranda Daniel >**
+**Equipo: Perros del Routing**
+
+| Integrantes |
+|---|
+| Peñarrieta Villa Jesús |
+| Reyes Cuevas Abraham |
+| Ulloa Jade |
+| Vega Miranda Daniel |
+
+🎬 **Reel de Instagram:** _<agregar link>_
 
 ---
 
