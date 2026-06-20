@@ -15,7 +15,7 @@ equipo** y **detección de gol**.
 | Ullola Castro Jade |
 | Vega Miranda Daniel |
 
-**Reel de Instagram:** _<agregar link>_
+**Reel de Instagram:** https://www.instagram.com/reel/DZygrVBxLeI/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==
 
 ---
 
